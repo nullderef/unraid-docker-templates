@@ -8,12 +8,21 @@
   <Project>https://owncloud.com/</Project>
   <Registry>https://hub.docker.com/r/siepie/censoredgames-owncloud/</Registry>
   <Repository>siepie/censoredgames-owncloud</Repository>
+  <GitHub>https://github.com/nullderef/owncloud</GitHub>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment>
     <Variable>
       <Name>HTTP_WEB_PORT</Name>
       <Value>80</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
     </Variable>
   </Environment>
   <Networking>
@@ -28,17 +37,17 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/owncloud</HostDir>
+      <HostDir>/mnt/user/appdata/owncloud/config</HostDir>
       <ContainerDir>/owncloud/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/owncloud</HostDir>
+      <HostDir>/mnt/user/appdata/owncloud/logs</HostDir>
       <ContainerDir>/owncloud/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/owncloud</HostDir>
+      <HostDir>/mnt/user/appdata/owncloud/data</HostDir>
       <ContainerDir>/owncloud/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>

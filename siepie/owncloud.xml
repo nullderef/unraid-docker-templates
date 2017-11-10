@@ -12,15 +12,15 @@
   <Privileged>true</Privileged>
   <Environment>
     <Variable>
-      <Name>PORT</Name>
-      <Value></Value>
+      <Name>HTTP_WEB_PORT</Name>
+      <Value>80</Value>
     </Variable>
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>PORT</HostPort>
+        <HostPort>80</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -28,21 +28,22 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/owncloud</HostDir>
       <ContainerDir>/owncloud/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/owncloud</HostDir>
       <ContainerDir>/owncloud/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/owncloud</HostDir>
       <ContainerDir>/owncloud/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-<WebUI>https://[IP]:[PORT:443]</WebUI>
+<WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Icon>https://owncloud.org/wp-content/themes/owncloudorgnew/assets/img/common/owncloud-square-logo.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>

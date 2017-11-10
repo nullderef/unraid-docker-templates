@@ -6,8 +6,8 @@
   <Name>owncloud</Name>
   <Description></Description>
   <Project>https://owncloud.com/</Project>
-  <Registry>https://hub.docker.com/r/siepie/censoredgames-owncloud/</Registry>
-  <Repository>siepie/censoredgames-owncloud</Repository>
+  <Registry>https://hub.docker.com/r/siepie/owncloud/</Registry>
+  <Repository>siepie/owncloud</Repository>
   <GitHub>https://github.com/nullderef/owncloud</GitHub>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
@@ -29,7 +29,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>80</HostPort>
+        <HostPort>9060</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>

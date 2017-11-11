@@ -6,8 +6,8 @@
   <Name>owncloud</Name>
   <Description></Description>
   <Project>https://owncloud.com/</Project>
-  <Registry>https://hub.docker.com/r/siepie/owncloud/</Registry>
-  <Repository>siepie/owncloud</Repository>
+  <Registry>https://hub.docker.com/r/censoredgames/owncloud/</Registry>
+  <Repository>censoredgames/owncloud</Repository>
   <GitHub>https://github.com/nullderef/owncloud</GitHub>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>

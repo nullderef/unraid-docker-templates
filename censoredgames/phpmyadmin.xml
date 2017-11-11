@@ -6,8 +6,8 @@
   <Name>phpmyadmin</Name>
   <Description></Description>
   <Project>https://phpmyadmin.com/</Project>
-  <Registry>https://hub.docker.com/r/siepie/phpmyadmin/</Registry>
-  <Repository>siepie/phpmyadmin</Repository>
+  <Registry>https://hub.docker.com/r/censoredgames/phpmyadmin/</Registry>
+  <Repository>censoredgames/phpmyadmin</Repository>
   <GitHub>https://github.com/nullderef/phpmyadmin</GitHub>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>

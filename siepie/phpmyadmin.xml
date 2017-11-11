@@ -7,7 +7,7 @@
   <Description></Description>
   <Project>https://phpmyadmin.com/</Project>
   <Registry>https://hub.docker.com/r/siepie/phpmyadmin/</Registry>
-  <Repository>siepie/owncloud</Repository>
+  <Repository>siepie/phpmyadmin</Repository>
   <GitHub>https://github.com/nullderef/phpmyadmin</GitHub>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
@@ -47,6 +47,6 @@
     </Volume>
   </Data>
 <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <Icon>https://owncloud.org/wp-content/themes/owncloudorgnew/assets/img/common/owncloud-square-logo.png</Icon>
+  <Icon>https://www.phpmyadmin.net/static/images/logo.png?2ccd9afd557e</Icon>
   <ExtraParams></ExtraParams>
 </Container>

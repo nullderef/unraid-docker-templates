@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category></Category>
+  <Date>2017-11-10</Date>
+  <Name>phpmyadmin</Name>
+  <Description></Description>
+  <Project>https://phpmyadmin.com/</Project>
+  <Registry>https://hub.docker.com/r/siepie/phpmyadmin/</Registry>
+  <Repository>siepie/owncloud</Repository>
+  <GitHub>https://github.com/nullderef/phpmyadmin</GitHub>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Environment>
+    <Variable>
+      <Name>SERVERHOST</Name>
+      <Value>localhost</Value>
+    </Variable>
+    <Variable>
+      <Name>COOKIE_SECRET</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8070</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+     </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/owncloud/config</HostDir>
+      <ContainerDir>/phpmyadmin/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+<WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Icon>https://owncloud.org/wp-content/themes/owncloudorgnew/assets/img/common/owncloud-square-logo.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>

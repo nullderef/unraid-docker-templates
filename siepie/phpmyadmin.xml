@@ -41,7 +41,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/owncloud/config</HostDir>
+      <HostDir>/mnt/user/appdata/phpmyadmin/config</HostDir>
       <ContainerDir>/phpmyadmin/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>

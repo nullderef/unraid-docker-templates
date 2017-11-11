@@ -17,6 +17,10 @@
       <Value>80</Value>
     </Variable>
     <Variable>
+      <Name>HTTP_ALIAS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
     </Variable>

@@ -42,12 +42,11 @@
     <Publish>
       <Port>
         <HostPort>8070</HostPort>
-        <ContainerPort>80</ContainerPort>
+        <ContainerPort>22</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
      </Publish>
   </Networking>
-<WebUI>http://[IP]:[PORT:22]</WebUI>
-  <Icon>https://www.phpmyadmin.net/static/images/logo.png?2ccd9afd557e</Icon>
+  <Icon>http://icons.iconarchive.com/icons/icons8/windows-8/256/Database-Backup-icon.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>

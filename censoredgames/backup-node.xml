@@ -20,6 +20,7 @@
       <Name>PASSWORD</Name>
       <Value>changeme</Value>
     </Variable>
+    <Variable>
       <Name>NFSSERVER</Name>
       <Value>localhost</Value>
     </Variable>
